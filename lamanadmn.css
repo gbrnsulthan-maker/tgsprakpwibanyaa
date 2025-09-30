@@ -1,0 +1,212 @@
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #bbf8ff 0%, #fff6e0 100%);
+}
+
+/* Navbarnyaa */
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #ffe5b4 0%, #bbf8ff 100%);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(255,182,193,0.10);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 64px;
+}
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.7em;
+    color: #2c7d86;
+    letter-spacing: 2px;
+    padding: 18px 0;
+    background: linear-gradient(90deg, #bbf8ff 0%, #ffe5b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 1px 2px 8px #bbf8ff;
+}
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.navbar-menu li a {
+    color: #2c7d86;
+    text-decoration: none;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.navbar-menu li a:hover {
+    background: #fff6e0;
+    color: #77c5cd;
+    box-shadow: 0 2px 8px #bbf8ff;
+}
+
+/* Container utamanyaa ya bg */
+.main-container {
+    max-width: 950px;
+    margin: 48px auto 0 auto;
+    background: rgba(255,255,255,0.96);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px #bbf8ff;
+    padding: 38px 32px 36px 32px;
+    position: relative;
+    border: 2.5px solid #77c5cd;
+}
+/* Judul dashboardnyaa ya bg */
+.dashboard-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.3em;
+    background: linear-gradient(90deg, #207882 0%, #ffe5b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 12px #bbf8ff;
+}
+
+/* Navigasi dashboard */
+.nav-dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0 18px 0;
+}
+.nav-dashboard a {
+    background: linear-gradient(90deg, #ffe5b4 0%, #77c5cd 100%);
+    color: #2c7d86;
+    padding: 12px 32px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.08em;
+    box-shadow: 0 2px 8px #bbf8ff;
+    transition: background 0.3s, color 0.2s, transform 0.2s;
+    letter-spacing: 1px;
+}
+.nav-dashboard a:hover {
+    background: linear-gradient(90deg, #77c5cd 0%, #ffe5b4 100%);
+    color: #fff;
+    transform: scale(1.06) translateY(-2px);
+}
+
+/* Info card */
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.info-card {
+    flex: 1 1 210px;
+    background: linear-gradient(120deg, #bbf8ff 60%, #fff6e0 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #bbf8ff;
+    padding: 22px 18px;
+    text-align: center;
+    color: #2c7d86;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: 1.5px solid #ffe5b4;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.info-card .info-label {
+    font-size: 1.05em;
+    color: #2c7d86;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.info-card .info-value {
+    font-size: 1.5em;
+    color: #77c5cd;
+    font-family: 'Pacifico', cursive;
+}
+.info-card::before {
+    content: attr(data-icon);
+    font-size: 2em;
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    opacity: 0.13;
+    pointer-events: none;
+}
+.info-card:hover {
+    transform: scale(1.04) translateY(-4px);
+    box-shadow: 0 8px 24px #bbf8ff;
+}
+
+/* Navigasi bahan */
+.bahan-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin: 32px 0 18px 0;
+}
+.bahan-link {
+    background: linear-gradient(90deg, #ffe5b4 0%, #77c5cd 100%);
+    color: #2c7d86;
+    padding: 8px 22px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 2px 8px #bbf8ff;
+    transition: background 0.3s, color 0.2s, transform 0.2s;
+    letter-spacing: 1px;
+}
+.bahan-link:hover {
+    background: linear-gradient(90deg, #77c5cd 0%, #ffe5b4 100%);
+    color: #fff;
+    transform: scale(1.06) translateY(-2px);
+}
+
+/* Stok bahan */
+.stok-section {
+    margin: 24px 0 0 0;
+}
+.stok-info {
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    padding: 10px 18px;
+    margin-bottom: 18px;
+    color: #2c7d86;
+    font-size: 1.08em;
+    box-shadow: 0 2px 8px #bbf8ff;
+    border: 1.5px solid #ffe5b4;
+    max-width: 400px;
+}
+.subtitle {
+    font-size: 1.2em;
+    margin: 22px 0 8px 0;
+    color: #77c5cd;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-container { padding: 12px 2px; }
+    .info-section { flex-direction: column; gap: 14px; }
+    .nav-dashboard { flex-direction: column; gap: 12px; }
+}
